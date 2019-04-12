@@ -1,4 +1,5 @@
 # learning-ReactJS
+# Tuần 1:
 * Cài đặt:
 * Extensions:
   1. React-detector
@@ -20,5 +21,14 @@
   * JSX
   * Babel Snippets
   * Emmet
-				
-				
+  * FileManager
+# Tuần 2: Khởi tạo project ReactJS đầu tiên:
+* cmd: npm install -g create-react-app
+* Vào folder cần tạo project mở cmd: create-react-app <tenProject> 
+  * Ví dụ: create-react-app myapp
+* cd vào thư mục project: 
+  * cd myapp
+* Khởi chạy ứng dụng: 
+  * npm start
+* Mặc định chạy port 3000, để đổi port vào file package.json tìm đến dòng "start" sửa thành "start": "set port=4200 && react-scripts start" (Lưu ý: port=4200 viết liền)
+* Lưu ý: Lỗi "Unchecked runtime.lastError: Could not establish connection. Receiving end does not exist." do một extentsion được cài đặt gây ra, không phải do chương trình.
