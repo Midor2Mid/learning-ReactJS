@@ -4,11 +4,11 @@ class Heroes extends Component {
     render() {
         return (
             <div className="col-xs-12 col-sm-12 col-md-12 col-lg-12">
-                <div className="thumbnail">
+                <div className="thumbnail" className = "text-center">
                     <img src="https://c-4tvylwolbz88x24nhtlwlkphx2ejbyzljkux2ejvt.g00.gamepedia.com/g00/3_c-4kvah9.nhtlwlkph.jvt_/c-4TVYLWOLBZ88x24oaawzx3ax2fx2fnhtlwlkph.jbyzljku.jvtx2fkvah9_nhtlwlkphx2fkx2fk6x2fIlhzathzaly_pjvu.wunx3fclyzpvux3d2hh53ih2iihjh765ml2m6l53iil809m1x26p87j.thyrx3dpthnl_$/$/$/$/$" alt="Rồng Vàng"/>
                     <div className="caption">
-                        <h3>Cloud9</h3>
-                        <p>
+                        <h3 style={{ textAlign: 'center' }}>Cloud9</h3>
+                        <p style={{ textAlign: 'center' }}>
                             Dendi
                         </p>
                         {/* <p>
