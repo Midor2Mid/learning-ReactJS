@@ -25,7 +25,7 @@
 # Tuần 2: Khởi tạo project ReactJS đầu tiên:
 * cmd: npm install -g create-react-app
 * Vào folder cần tạo project mở cmd: create-react-app <tenProject> 
-  * Ví dụ: create-react-app myapp
+  * Ví dụ: create-react-app myapp //Lưu ý: tên không viết hoa.
 * cd vào thư mục project: 
   * cd myapp
 * Khởi chạy ứng dụng: 
@@ -42,3 +42,15 @@
   * Dưới id="root" (mặc định) thêm: 
     *  `<script src="%PUBLIC_URL%/js/jquery-3.4.0.min.js"></script>`
     *  `<script src="%PUBLIC_URL%/js/bootstrap.min.js"></script>`
+* Lưu ý: 
+  *  `href="#" => href="/"`
+  *  `<h3 style={{ textAlign: 'center' }}> <h3/>`
+  *  `class => className`
+  *  tagWrapper: Các phần tử JSX phải được bao bọc bởi 1 thẻ bên ngoài: ví dụ: <div>...<div/>
+# Tuần 4: JSX - Javascript + XML - Javascript + eXtensible Markup Language
+* Trong thực tế, designer có thể gửi mã nguồn viết bằng HTML, tuy nhiên ta đang làm việc với JSX:
+  *  Công cụ để chuyển từ [HTML => JSX](https://magic.reactjs.net/htmltojsx.htm)
+  *  Với đoạn JSX trả về chỉ cần quan tâm hàm render: return(...)
+  *  Render là 1 hàm nên có thể khai báo biến như bình thường: var a = 5; Để gọi 1 biến sử dụng: {<tên biến>} {a}
+  *  Các phép toán có thể được gọi trong {}. Ví dụ: {a+b}
+  *  Tương tự với các Object: {<tên Object>.<thuộc tính>}
