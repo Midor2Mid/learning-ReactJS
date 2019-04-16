@@ -10,7 +10,7 @@ class Header extends Component {
                         <a href="/">Trang Chủ</a>
                     </li>
                     <li className="active">
-                        <a href="/">Danh Mục Sản Phẩm</a>
+                        <a href="/">Heroes</a>
                     </li>
                 </ul>
             </nav>
