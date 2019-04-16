@@ -31,6 +31,7 @@
 * Khởi chạy ứng dụng: 
   * npm start
 * Mặc định chạy port 3000, để đổi port vào file package.json tìm đến dòng "start" sửa thành "start": "set port=4200 && react-scripts start" (Lưu ý: port=4200 viết liền)
+* Nếu port đã được sử dụng sẽ được hỏi có muốn chạy port khác.
 * Lưu ý: Lỗi "Unchecked runtime.lastError: Could not establish connection. Receiving end does not exist." do một extentsion được cài đặt gây ra, không phải do chương trình.
 # Tuần 3: Component
 * [Bootstrap 3.3.7](https://getbootstrap.com/docs/3.3/)
@@ -61,3 +62,9 @@
       }`
   *  Có thể viết function ở trước hàm render()
   *  Nếu có thông báo lỗi: Each child in an array or iterator should have a unique "key" prop. => Đến hàm xử lí từng đối tượng thêm thuộc tính: key={Object.uniqueField} ví dụ: key={heroes.id}
+# Tuần 5: Props - Thuộc tính của components (Class)
+* Khởi tạo project mới: 
+  *  create-react-app lesson04-props
+  *  Copy thư mục css, font, js và file html từ 1 trong những project cũ qua thư mục public của project vừa mới tạo. => Đã nhúng bootstrap
+  *  Class App là cha, muốn truyền thuộc tính vào class con thì sử dụng props
+  *  this.props.children trả về nội dung của thẻ components. Ví dụ: `<Heroes>ABC</Heroes>` trả về ABC.
