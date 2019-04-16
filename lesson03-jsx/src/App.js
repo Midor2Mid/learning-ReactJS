@@ -3,14 +3,14 @@ import './App.css';
 
 class App extends Component {
 
-    showInfoProduct(product){
-        if(product.status){
-            return  <h3>
-                        ID: {product.id}<br />
-                        Name: {product.name}<br />
-                        Type: {product.type}<br />
-                        Status: {product.status ? 'Active' : 'Pending'}
-                    </h3>
+    showInfoProduct(product) {
+        if (product.status) {
+            return <h3>
+                ID: {product.id}<br />
+                Name: {product.name}<br />
+                Type: {product.type}<br />
+                Status: {product.status ? 'Active' : 'Pending'}
+            </h3>
         }
     }
     render() {
@@ -23,6 +23,36 @@ class App extends Component {
             type: 'Strength',
             status: true
         }
+
+        var heroes = [
+            {
+                id: 1,
+                name: 'Dragon Knight',
+                type: 'Strength'
+            },
+            {
+                id: 2,
+                name: 'Puck',
+                type: 'Intelligence'
+            },
+            {
+                id: 3,
+                name: 'Viper',
+                type: 'Agility'
+            },
+            {
+                id: 4,
+                name: 'Doom',
+                type: 'Strength'
+            },
+        ];
+        var elements = heroes.map((heroes, index) => {
+            return <div key={heroes.id}>
+                <h2>Name: {heroes.name}</h2>
+                <p> Type: {heroes.type}</p>
+            </div>
+        })
+
         return (
             // React.createElement('span',{className:'label label-danger', id:''}, 'App Component');
             <div>
@@ -47,6 +77,9 @@ class App extends Component {
                         name: {name}
                     </h3>
                     {this.showInfoProduct(product)}
+                    <br />
+                    <hr />
+                    {elements}
                 </div>
             </div>
         );
