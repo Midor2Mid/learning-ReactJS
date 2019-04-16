@@ -59,4 +59,5 @@
       `.ml-30{
         margin-left: 30px
       }`
+  *  Có thể viết function ở trước hàm render()
   *  Nếu có thông báo lỗi: Each child in an array or iterator should have a unique "key" prop. => Đến hàm xử lí từng đối tượng thêm thuộc tính: key={Object.uniqueField} ví dụ: key={heroes.id}
