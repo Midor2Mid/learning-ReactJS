@@ -55,3 +55,7 @@
   *  Các phép toán có thể được gọi trong {}. Ví dụ: {a+b}
   *  Tương tự với các Object: {<tên Object>.<thuộc tính>}
   *  Note: Thẻ Div để nhóm nhiều thành phần trên website vào 1 khu vực.
+  *  File app.js có file định nghĩa css là app.css. Có thể chèn thêm các thuộc tính (ví dụ vào thẻ <div className="ml-30">) thì vào app.css định nghĩa như sau: 
+      `.ml-30{
+        margin-left: 30px
+      }`
