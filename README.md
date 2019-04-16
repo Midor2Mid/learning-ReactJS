@@ -37,7 +37,8 @@
   * Sau khi giải nén copy 3 thư mục css, fonts, js vào thư mục public trong project.
 * Download [JQuery](https://jquery.com/download/) bỏ vào thư mục public/js trong project (js là thư mục của bootstrap).
 * Trong file index.html thêm: 
-  * <link rel="stylesheet" type="text/css" href="%PUBLIC_URL%/css/bootstrap.min.css"> dưới thẻ link thứ 2.
+  * Dưới thẻ link thứ 2: 
+    *  <link rel="stylesheet" type="text/css" href="%PUBLIC_URL%/css/bootstrap.min.css"> 
   * Dưới id="root" (mặc định) thêm: 
     *  <script src="%PUBLIC_URL%/js/jquery-3.4.0.min.js"></script>
     *  <script src="%PUBLIC_URL%/js/bootstrap.min.js"></script>
