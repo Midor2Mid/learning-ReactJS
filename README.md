@@ -71,4 +71,8 @@
 # Tuần 6: Handle Events - Xử lí sự kiện
 * Copy source code từ tuần 5, trong app.js tạo thêm 1 button, thêm thuộc tính cho button: `onClick={this.onClick}` //Đây là trong class nên cần gọi `this.<tên function>` (ở đây là onClick).
   *  Lưu ý function onClick phải đưa ra ngoài render() nhưng vẫn ở bên trong class.
-  *  Danh sách [events](https://reactjs.org/docs/events.html)
+  *  Danh sách [events](https://reactjs.org/docs/events.html) mà ReactJS hỗ trợ. (onClick, onDoubleClick,...).
+* Để gọi và sử dụng props (thuộc tính) có thể dùng:
+  *  Tạo constructor có tham số props và gọi super(props)
+  *   Để truy cập this tại function: this.tên_function = this.tên_function.bind(this)
+  *  Tên_function = () => {}
