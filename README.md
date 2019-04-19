@@ -68,3 +68,7 @@
   *  Copy thư mục css, font, js và file html từ 1 trong những project cũ qua thư mục public của project vừa mới tạo. => Đã nhúng bootstrap
   *  Class App là cha, muốn truyền thuộc tính vào class con thì sử dụng props
   *  this.props.children trả về nội dung của thẻ components. Ví dụ: `<Heroes>ABC</Heroes>` trả về ABC.
+# Tuần 6: Handle Events - Xử lí sự kiện
+* Copy source code từ tuần 5, trong app.js tạo thêm 1 button, thêm thuộc tính cho button: `onClick={this.onClick}` //Đây là trong class nên cần gọi `this.<tên function>` (ở đây là onClick).
+  *  Lưu ý function onClick phải đưa ra ngoài render() nhưng vẫn ở bên trong class.
+  *  Danh sách [events](https://reactjs.org/docs/events.html)
